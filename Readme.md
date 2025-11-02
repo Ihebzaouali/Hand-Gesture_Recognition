@@ -92,7 +92,7 @@ pip install mediapipe opencv-python numpy pyserial
 - Open DroidCam on your phone and leave it running.  
 - Make sure the phone and Raspberry Pi are connected to the same Wi-Fi network.  
 - Note the video feed URL displayed by DroidCam, e.g.:  
-http://192.168.1.12:4747/video_feed(The script optimized_control.py already contains this URL. Adjust it based on your Wifi IP adress)    
+http://192.168.1.12:4747/video_feed (The script optimized_control.py already contains this URL. Adjust it based on your Wifi IP adress)    
 
 2️⃣ Activate the Python environment
 
