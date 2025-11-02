@@ -89,33 +89,36 @@ pip install mediapipe opencv-python numpy pyserial
 ## 🧩 How to Run : 
 1️⃣ Start DroidCam on your phone
 
--Open DroidCam on your phone and leave it running.
--Make sure the phone and Raspberry Pi are connected to the same Wi-Fi network.
--Note the video feed URL displayed by DroidCam, e.g.:
-http://192.168.1.12:4747/video_feed(The script optimized_control.py already contains this URL. Adjust it based on your Wifi IP adress)
+- Open DroidCam on your phone and leave it running.  
+- Make sure the phone and Raspberry Pi are connected to the same Wi-Fi network.  
+- Note the video feed URL displayed by DroidCam, e.g.:  
+http://192.168.1.12:4747/video_feed(The script optimized_control.py already contains this URL. Adjust it based on your Wifi IP adress)    
 
 2️⃣ Activate the Python environment
 
 ```bash
 cd "path_to_your_project_folder/"
 source ~/mediapipe_env/bin/activate
+```
 
 3️⃣ Check your Arduino port
 
 Verify with:
 ```bash
 ls /dev/ttyACM* /dev/ttyUSB* 
+```
 Make sure to use the correct port when running the script.
 
 4️⃣ Run the Python script
 
 ```bash
 python3 optimized_control.py
+```
 
--Replace /dev/ttyACM0 with your actual Arduino port.
--The script automatically connects to the phone camera via Wi-Fi.
--It detects hand gestures and sends servo commands to the Arduino.
--Press ESC to exit.
+- Replace /dev/ttyACM0 with your actual Arduino port.  
+- The script automatically connects to the phone camera via Wi-Fi.  
+- It detects hand gestures and sends servo commands to the Arduino.  
+- Press ESC to exit.  
 
 ---
 
@@ -127,31 +130,31 @@ The Arduino listens to serial commands from Python and drives the 5 servos via t
 
 ## 🧩 Workflow :
 
--Phone camera streams video via DroidCam over Wi-Fi.
+- Phone camera streams video via DroidCam over Wi-Fi.  
 
--MediaPipe extracts hand landmarks.
+- MediaPipe extracts hand landmarks.  
 
--Model (gesture_recognition.task) classifies the gesture.
+- Model (gesture_recognition.task) classifies the gesture.  
 
--Python sends commands via serial to Arduino.
+- Python sends commands via serial to Arduino.  
 
--Arduino moves servos according to the gesture.
+- Arduino moves servos according to the gesture.  
 
--Gesture stability logic ensures only stable gestures trigger servo movement.
+- Gesture stability logic ensures only stable gestures trigger servo movement.  
 
 ---
 
 ## 🧩 Future Improvements :
 
--Support multiple hands simultaneously	
+- Support multiple hands simultaneously	
 
--Add more gestures and retrain the model
+- Add more gestures and retrain the model
 
--Integrate with ROS 2 for robotic applications
+- Integrate with ROS 2 for robotic applications
 
--Develop GUI for visualization 
+- Develop GUI for visualization 
 
--Test on more powerful development boards (e.g., NVIDIA Jetson) to increase performance and allow real-time multi-hand recognition
+- Test on more powerful development boards (e.g., NVIDIA Jetson) to increase performance and allow real-time multi-hand recognition
 
 ---
 
