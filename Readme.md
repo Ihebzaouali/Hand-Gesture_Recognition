@@ -24,7 +24,6 @@ iheb_hand_gesture_recognition/
 
 ├── arduino/  
 
-
 │ └── servo_control
 
 
