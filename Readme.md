@@ -83,7 +83,7 @@ Then install dependencies:
 
 ```bash
 pip install mediapipe opencv-python numpy pyserial
-
+```
 ---
 
 ## 🧩 How to Run : 
