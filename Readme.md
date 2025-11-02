@@ -23,11 +23,11 @@ The system performs:
 iheb_hand_gesture_recognition/
 
 ├── arduino/  
-     └── servo_control
+         └── servo_control
 
-         └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture
+             └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture
 
-     └── libraires # libraires for the PCA9685 module
+         └── libraires # libraires for the PCA9685 module
 
 ├── mediapipe_env/	
 │ └── (virtual environment files)
