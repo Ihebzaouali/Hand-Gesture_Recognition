@@ -20,25 +20,23 @@ The system performs:
 
 ## 🗂️ Project Structure
 
-iheb_hand_gesture_recognition/
+iheb_hand_gesture_recognition/  
 
 ├── arduino/  
-         └── servo_control
+    └── servo_control  
+        └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture   
+    └── libraires # libraires for the PCA9685 module  
 
-             └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture
+├── mediapipe_env/  	
+   └── (virtual environment files)  
+   └── bin/activate # Must be sourced to activate Python env  
 
-         └── libraires # libraires for the PCA9685 module
-
-├── mediapipe_env/	
-│ └── (virtual environment files)
-│ └── bin/activate # Must be sourced to activate Python env
-│
-├── gesture_recognition.task # Trained gesture recognition model
-├── recognition.py # Base gesture recognition (non-optimized)
-├── optimized.py # Optimized recognition (higher FPS, cleaner)
-├── optimized_control.py # Full system: gesture recognition + servo control
-├── requirements.txt   # Liste des dépendances Python
-└── README.md # Project documentation
+├── gesture_recognition.task # Trained gesture recognition model  
+├── recognition.py # Base gesture recognition (non-optimized)  
+├── optimized.py # Optimized recognition (higher FPS, cleaner)  
+├── optimized_control.py # Full system: gesture recognition + servo control  
+├── requirements.txt   # Liste des dépendances Python  
+└── README.md # Project documentation  
 
 
 ---
@@ -65,15 +63,15 @@ iheb_hand_gesture_recognition/
 
 Le projet nécessite Python 3.11+ et les packages suivants (voir requirements.txt) :
 
-mediapipe
+-mediapipe
 
-opencv-python
+-opencv-python
 
-numpy
+-numpy
 
-pyserial
+-pyserial
 
-Installation rapide :
+**Installation rapide :**
 
 ```bash
 python3 -m venv mediapipe_env
@@ -86,7 +84,7 @@ Then install dependencies:
 pip install mediapipe opencv-python numpy pyserial
 
 
-##How to Run : 
+## 🧩 How to Run : 
 1️⃣ Start DroidCam on your phone
 
 -Open DroidCam on your phone and leave it running.
@@ -117,11 +115,11 @@ python3 optimized_control.py
 -It detects hand gestures and sends servo commands to the Arduino.
 -Press ESC to exit.
 
-##Arduino Setup:
+## 🧩 Arduino Setup:
 Upload the code in arduino/servo_control.ino via Arduino IDE.
 The Arduino listens to serial commands from Python and drives the 5 servos via the PCA9685 module.
 
-##Workflow :
+## 🧩 Workflow :
 
 -Phone camera streams video via DroidCam over Wi-Fi.
 
@@ -136,7 +134,7 @@ The Arduino listens to serial commands from Python and drives the 5 servos via t
 -Gesture stability logic ensures only stable gestures trigger servo movement.
 
 
-##Future Improvements :
+## 🧩 Future Improvements :
 
 -Support multiple hands simultaneously	
 
