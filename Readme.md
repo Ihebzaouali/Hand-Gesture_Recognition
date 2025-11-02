@@ -24,7 +24,7 @@ iheb_hand_gesture_recognition/
 
 ├── arduino/  
     └── servo_control  
-        └└── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture   
+        └─└── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture   
     └── libraires # libraires for the PCA9685 module  
 
 ├── mediapipe_env/     
@@ -73,7 +73,7 @@ Le projet nécessite Python 3.11+ et les packages suivants (voir requirements.tx
 
 Installation rapide :
 
-```bash
+
 python3 -m venv mediapipe_env
 source ~/mediapipe_env/bin/activate
 pip install -r requirements.txt
