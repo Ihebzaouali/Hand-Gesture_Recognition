@@ -34,6 +34,7 @@ iheb_hand_gesture_recognition/
 ├── recognition.py # Base gesture recognition (non-optimized)
 ├── optimized.py # Optimized recognition (higher FPS, cleaner)
 ├── optimized_control.py # Full system: gesture recognition + servo control
+├── requirements.txt   # Liste des dépendances Python
 └── README.md # Project documentation
 
 

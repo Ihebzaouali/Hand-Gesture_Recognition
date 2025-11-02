@@ -1,0 +1,10 @@
+# Ignore Python virtual environment
+mediapipe_env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+	
