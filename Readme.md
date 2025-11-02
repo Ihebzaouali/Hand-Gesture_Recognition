@@ -73,10 +73,11 @@ Le projet nécessite Python 3.11+ et les packages suivants (voir requirements.tx
 
 Installation rapide :
 
-
+```bash
 python3 -m venv mediapipe_env
 source ~/mediapipe_env/bin/activate
 pip install -r requirements.txt
+```
 
 Then install dependencies:
 
