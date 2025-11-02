@@ -21,8 +21,13 @@ The system performs:
 ## 🗂️ Project Structure
 
 iheb_hand_gesture_recognition/
-├── arduino/
+
+├── arduino/  
+
+
 │ └── servo_control
+
+
 │    └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture
 │ └── libraires # libraires for the PCA9685 module
 │
@@ -52,7 +57,7 @@ iheb_hand_gesture_recognition/
 
 ### 🔹 Software
 - Raspberry Pi OS / Ubuntu  
-- Python 3.8+  
+- Python 3.11+  
 - Arduino IDE  
 - DroidCam client on phone (no need to install on Raspberry Pi)
 
@@ -60,11 +65,22 @@ iheb_hand_gesture_recognition/
 
 ## 🧩 Python Dependencies
 
-Activate the virtual environment:
+Le projet nécessite Python 3.11+ et les packages suivants (voir requirements.txt) :
+
+mediapipe
+
+opencv-python
+
+numpy
+
+pyserial
+
+Installation rapide :
 
 ```bash
-cd path_to_your_project_folder/mediapipe_env
-source bin/activate
+python3 -m venv mediapipe_env
+source ~/mediapipe_env/bin/activate
+pip install -r requirements.txt
 
 Then install dependencies:
 
