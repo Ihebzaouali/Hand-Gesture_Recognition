@@ -24,13 +24,12 @@ iheb_hand_gesture_recognition/
 
 ├── arduino/  
     └── servo_control  
-        └── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture   
+        └└── servo_control.ino # Arduino code to control servos via PCA9685 according to the gesture   
     └── libraires # libraires for the PCA9685 module  
 
-├── mediapipe_env/  
-      	
-      └── (virtual environment files)  
-      └── bin/activate # Must be sourced to activate Python env  
+├── mediapipe_env/     
+    └── (virtual environment files)  
+    └── bin/activate # Must be sourced to activate Python env  
 
 ├── gesture_recognition.task # Trained gesture recognition model  
 ├── recognition.py # Base gesture recognition (non-optimized)  
@@ -72,7 +71,7 @@ Le projet nécessite Python 3.11+ et les packages suivants (voir requirements.tx
 
 -pyserial
 
-# Installation rapide :
+Installation rapide :
 
 ```bash
 python3 -m venv mediapipe_env
@@ -153,7 +152,7 @@ The Arduino listens to serial commands from Python and drives the 5 servos via t
 
 -Test on more powerful development boards (e.g., NVIDIA Jetson) to increase performance and allow real-time multi-hand recognition
 
-
+---
 
 
 
